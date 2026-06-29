@@ -83,6 +83,41 @@ html, body { width: 100%; height: 100%; overflow: hidden; background: #05070a; }
   text-transform: uppercase;
 }
 
+#legend {
+  position: absolute;
+  top: 38px;
+  right: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+#legend .leg {
+  display: grid;
+  grid-template-columns: 12px auto;
+  column-gap: 10px;
+  row-gap: 1px;
+  align-items: center;
+}
+#legend .sw {
+  grid-row: span 2;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--c);
+  box-shadow: 0 0 10px var(--c);
+}
+#legend dt {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+#legend dd {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--dim);
+}
+
 #tools {
   position: absolute;
   top: 50%;
