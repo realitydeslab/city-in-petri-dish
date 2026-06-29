@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City in a Petri Dish</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+
+    <div id="overlay">
+      <header id="title">
+        <h1>City in a Petri&nbsp;Dish</h1>
+        <p class="subtitle">A solar culture of San Francisco · ALIFE 2026</p>
+      </header>
+
+      <div id="fps">— fps</div>
+
+      <div id="readout">
+        <div class="metric"><span class="k">time</span><span class="v" id="m-time">—</span></div>
+        <div class="metric"><span class="k">sun</span><span class="v" id="m-sun">—</span></div>
+        <div class="metric"><span class="k">harvest</span><span class="v" id="m-harvest">—</span> kWh/m²</div>
+        <div class="metric"><span class="k">autonomy</span><span class="v" id="m-autonomy">—</span></div>
+        <div class="metric"><span class="k">districts</span><span class="v" id="m-districts">—</span></div>
+      </div>
+
+      <div id="tools">
+        <button class="tool active" data-tool="light"><span class="ic">☀</span>light</button>
+        <button class="tool" data-tool="cloud"><span class="ic">☁</span>cloud</button>
+        <button class="tool" data-tool="rain"><span class="ic">🌧</span>rain</button>
+        <button class="tool" data-tool="wind"><span class="ic">≋</span>wind</button>
+      </div>
+
+      <footer id="hint">
+        <span id="hint-text">move the cursor to shine the flashlight · the lit city grows</span>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
